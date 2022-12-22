@@ -1,15 +1,9 @@
-import {
-  useQuery,
-  // useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from 'react-query';
+import * as React from 'react';
+import { useQuery, QueryClient, QueryClientProvider } from 'react-query';
 import Grid from '@mui/material/Grid';
 import CircularIndeterminate from './CircularIndeterminate';
 import ProductCard from './ProductCard';
 import { Typography } from '@mui/material';
-//   import {  postTodo } from '../my-api'
 
 // Create a client
 const queryClient = new QueryClient();
