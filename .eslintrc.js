@@ -9,8 +9,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react'],
-  rules: {
-    'prettier/prettier': ['error'],
-  },
+  plugins: ['react', 'prettier'],
+  rules: { 'react/prop-types': 'off' },
 };
