@@ -1,6 +1,7 @@
 {
   "name": "reactqueryexample",
   "version": "0.1.0",
+  "homepage": "https://sasegura.github.io/reactquery",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -21,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +48,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.11",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.8.1"
   }
 }
